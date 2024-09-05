@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturador Electrónico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #303D96;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .header button {
+            background-color: #FF6347;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .header button:hover {
+            background-color: #FF4500;
+        }
+
+        .web-content {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ESTÁS EN EL FACTURADOR ELECTRÓNICO</h1>
+        <button onclick="cerrarPagina()">SALIR</button>
+    </div>
+
+    <iframe class="web-content" src="https://lavaflash.misistemayapp.com/login"></iframe>
+
+    <script>
+        function cerrarPagina() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
